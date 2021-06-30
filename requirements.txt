@@ -4,3 +4,6 @@ flask-migrate>=3.0.1
 flask-wtf>=0.15.1
 flask-mail
 pyjwt
+flask-bootstrap
+pytest
+email_validator
