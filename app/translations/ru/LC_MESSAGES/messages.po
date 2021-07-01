@@ -1,4 +1,3 @@
-j Russian translations for PROJECT.
 # Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-01 18:04+0300\n"
+"POT-Creation-Date: 2021-07-01 19:03+0300\n"
 "PO-Revision-Date: 2021-07-01 17:43+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -23,25 +22,61 @@ msgstr ""
 msgid "Please log in to access this page."
 msgstr "Пожалуйста, авторизуйтесь, чтобы получить доступ к этой странице."
 
-#: app/forms.py:10
+#: app/forms.py:10 app/forms.py:28 app/forms.py:35
 msgid "Username"
 msgstr "Имя пользователя"
 
-#: app/forms.py:11
+#: app/forms.py:11 app/forms.py:55
 msgid "Email"
 msgstr "Почтовый адрес"
 
-#: app/forms.py:12
+#: app/forms.py:12 app/forms.py:29 app/forms.py:60
 msgid "Password"
 msgstr "Пароль"
 
-#: app/forms.py:13
+#: app/forms.py:13 app/forms.py:61
 msgid "Confirm Password"
 msgstr "Подтвердите пароль"
 
-#: app/forms.py:14
+#: app/forms.py:14 app/templates/register.html:4
 msgid "Register"
 msgstr "Регистрация"
+
+#: app/forms.py:19 app/forms.py:47
+msgid "Please use a different name."
+msgstr "Пожалуйста, выберите другое имя."
+
+#: app/forms.py:24
+msgid "Please use a different email address."
+msgstr "Пожалуйста, используйте другой почтовый адрес."
+
+#: app/forms.py:30
+msgid "Remember Me"
+msgstr "Запомнить меня"
+
+#: app/forms.py:31 app/templates/edit_profile.html:4 app/templates/login.html:4
+msgid "Sign In"
+msgstr "Войти"
+
+#: app/forms.py:36
+msgid "About me"
+msgstr "Обо мне"
+
+#: app/forms.py:37 app/forms.py:51
+msgid "Submit"
+msgstr "Отправить"
+
+#: app/forms.py:50
+msgid "Say something"
+msgstr "Скажите что-нибудь"
+
+#: app/forms.py:56
+msgid "Reset Password Request"
+msgstr "Запрос сброса пароля"
+
+#: app/forms.py:62
+msgid "Request Password Reset"
+msgstr "Сбросить пароль"
 
 #: app/routes.py:37
 #, fuzzy
@@ -70,39 +105,102 @@ msgid "You cannot follow yourself"
 msgstr "Вы не можете подписаться на себя"
 
 #: app/routes.py:123
-#, fuzzy, python-format
+#, python-format
 msgid "You are following %(username)s!"
-msgstr "Вы подписаны на %s!"
+msgstr "Вы подписаны на %(username)s!"
 
 #: app/routes.py:134
 msgid "You cannot unfollow yourself"
-msgstr ""
+msgstr "Вы не можете отписаться от себя"
 
 #: app/routes.py:138
-#, fuzzy, python-format
+#, python-format
 msgid "You are not following %(username)s!"
-msgstr "Вы подписаны на %s!"
+msgstr "Вы не подписаны на %(username)s!"
 
 #: app/routes.py:161
 msgid "Check you email for the instructions to reset your password."
 msgstr ""
+"Проверьте вашу электронную почту, инструкции для сброса пароля были "
+"высланы."
 
 #: app/routes.py:176
 msgid "You password has been changed."
-msgstr ""
+msgstr "Ваш пароль был изменен."
 
 #: app/templates/404.html:3
 msgid "File Not Found"
-msgstr ""
+msgstr "Файл не найден"
 
 #: app/templates/500.html:3
 msgid "An unexpected error has occured"
-msgstr ""
+msgstr "Произошла непредвиденная ошибка"
 
 #: app/templates/500.html:4
 msgid "The Administrator has been notified. Sorry for the inconvinience!"
-msgstr ""
+msgstr "Администрация уже в кусре. Приносим извенения за неудобства!"
 
-#~ msgid "You are not following %s!"
-#~ msgstr ""
+#: app/templates/_post.html:12
+#, python-format
+msgid "said %(when)s:"
+msgstr "сказал(а) %(when)s:"
+
+#: app/templates/index.html:3
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr "Привет, %(username)s"
+
+#: app/templates/index.html:25 app/templates/user.html:21
+msgid "Newer posts"
+msgstr "Новые посты"
+
+#: app/templates/index.html:29 app/templates/user.html:25
+msgid "Older posts"
+msgstr "Старые посты"
+
+#: app/templates/login.html:10
+msgid "New User?"
+msgstr "Новый пользователь?"
+
+#: app/templates/login.html:10
+msgid "Click to Register!"
+msgstr "Нажмите для регистрации!"
+
+#: app/templates/login.html:12
+msgid "Forgot Your Password?"
+msgstr "Забыли ваш пароль?"
+
+#: app/templates/login.html:13
+msgid "Click To Reset It"
+msgstr "Нажмите чтобы сбросить"
+
+#: app/templates/reset_password.html:4
+msgid "Reset Your Password"
+msgstr "Сбросить ваш пароль"
+
+#: app/templates/reset_password_request.html:4
+#, fuzzy
+msgid "Reset Password"
+msgstr "Сбросить пароль"
+
+#: app/templates/user.html:7
+#, python-format
+msgid "User: %(username)s"
+msgstr "Пользователь: %(username)s."
+
+#: app/templates/user.html:9
+msgid "Last seen on: "
+msgstr "Последний раз заходил: "
+
+#: app/templates/user.html:33
+msgid "Edit your profile"
+msgstr "Редактировать ваш профиль"
+
+#: app/templates/user.html:35
+msgid "Follow"
+msgstr "Пописаться"
+
+#: app/templates/user.html:37
+msgid "Unfollow"
+msgstr "Отписаться"
 
