@@ -8,3 +8,4 @@ flask-bootstrap
 pytest
 email_validator
 flask-moment
+flask-babel

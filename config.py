@@ -14,3 +14,4 @@ class Config:
     ADMINS = ['ilya@mindsdb.com']
 
     POSTS_PER_PAGE = 3
+    LAUNGUAGES = ['en', 'ru']
