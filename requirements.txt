@@ -9,3 +9,5 @@ pytest
 email_validator
 flask-moment
 flask-babel
+guess-language_spirit
+requests
