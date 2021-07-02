@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-02 10:30+0300\n"
+"POT-Creation-Date: 2021-07-02 11:38+0300\n"
 "PO-Revision-Date: 2021-07-01 17:43+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -78,53 +78,53 @@ msgstr "Запрос сброса пароля"
 msgid "Request Password Reset"
 msgstr "Сбросить пароль"
 
-#: app/routes.py:37
+#: app/routes.py:40
 #, fuzzy
 msgid "Your post is now live!"
 msgstr "Ваш пост создан!"
 
-#: app/routes.py:55
+#: app/routes.py:58
 msgid "Invalid login or password"
 msgstr "Неверный логин или пароль"
 
-#: app/routes.py:80
+#: app/routes.py:83
 msgid "Congratulations, you are now a registered user!"
 msgstr "Поздравляю, вы зарегистрированы!"
 
-#: app/routes.py:104
+#: app/routes.py:107
 msgid "Your changes have been saved"
 msgstr "Ваши изменения были сохранены"
 
-#: app/routes.py:116 app/routes.py:131
+#: app/routes.py:119 app/routes.py:134
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Пользователь %(username)s не найден."
 
-#: app/routes.py:119
+#: app/routes.py:122
 msgid "You cannot follow yourself"
 msgstr "Вы не можете подписаться на себя"
 
-#: app/routes.py:123
+#: app/routes.py:126
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Вы подписаны на %(username)s!"
 
-#: app/routes.py:134
+#: app/routes.py:137
 msgid "You cannot unfollow yourself"
 msgstr "Вы не можете отписаться от себя"
 
-#: app/routes.py:138
+#: app/routes.py:141
 #, python-format
 msgid "You are not following %(username)s!"
 msgstr "Вы не подписаны на %(username)s!"
 
-#: app/routes.py:161
+#: app/routes.py:164
 msgid "Check you email for the instructions to reset your password."
 msgstr ""
 "Проверьте вашу электронную почту, инструкции для сброса пароля были "
 "высланы."
 
-#: app/routes.py:176
+#: app/routes.py:179
 msgid "You password has been changed."
 msgstr "Ваш пароль был изменен."
 
