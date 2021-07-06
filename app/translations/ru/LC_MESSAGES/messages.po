@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-02 11:38+0300\n"
+"POT-Creation-Date: 2021-07-06 13:20+0300\n"
 "PO-Revision-Date: 2021-07-01 17:43+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -78,55 +78,63 @@ msgstr "Запрос сброса пароля"
 msgid "Request Password Reset"
 msgstr "Сбросить пароль"
 
-#: app/routes.py:40
+#: app/routes.py:45
 #, fuzzy
 msgid "Your post is now live!"
 msgstr "Ваш пост создан!"
 
-#: app/routes.py:58
+#: app/routes.py:63
 msgid "Invalid login or password"
 msgstr "Неверный логин или пароль"
 
-#: app/routes.py:83
+#: app/routes.py:88
 msgid "Congratulations, you are now a registered user!"
 msgstr "Поздравляю, вы зарегистрированы!"
 
-#: app/routes.py:107
+#: app/routes.py:112
 msgid "Your changes have been saved"
 msgstr "Ваши изменения были сохранены"
 
-#: app/routes.py:119 app/routes.py:134
+#: app/routes.py:124 app/routes.py:139
 #, python-format
 msgid "User %(username)s not found."
 msgstr "Пользователь %(username)s не найден."
 
-#: app/routes.py:122
+#: app/routes.py:127
 msgid "You cannot follow yourself"
 msgstr "Вы не можете подписаться на себя"
 
-#: app/routes.py:126
+#: app/routes.py:131
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "Вы подписаны на %(username)s!"
 
-#: app/routes.py:137
+#: app/routes.py:142
 msgid "You cannot unfollow yourself"
 msgstr "Вы не можете отписаться от себя"
 
-#: app/routes.py:141
+#: app/routes.py:146
 #, python-format
 msgid "You are not following %(username)s!"
 msgstr "Вы не подписаны на %(username)s!"
 
-#: app/routes.py:164
+#: app/routes.py:169
 msgid "Check you email for the instructions to reset your password."
 msgstr ""
 "Проверьте вашу электронную почту, инструкции для сброса пароля были "
 "высланы."
 
-#: app/routes.py:179
+#: app/routes.py:185
 msgid "You password has been changed."
 msgstr "Ваш пароль был изменен."
+
+#: app/translate.py:9
+msgid "Error: the translation is not configured."
+msgstr "Ошибка: функция перевода не настроена."
+
+#: app/translate.py:15
+msgid "Error: the translation service is failed."
+msgstr "Ошибка: неудачная попытка перевода."
 
 #: app/templates/404.html:3
 msgid "File Not Found"
@@ -145,10 +153,14 @@ msgstr "Администрация уже в кусре. Приносим изв
 msgid "said %(when)s:"
 msgstr "сказал(а) %(when)s:"
 
+#: app/templates/_post.html:24
+msgid "Translate"
+msgstr "Перевести"
+
 #: app/templates/base.html:4
 #, python-format
 msgid "%(title)s - Microblog"
-msgstr ""
+msgstr "%(title)s - Микроблог"
 
 #: app/templates/base.html:4
 msgid "Welcome to Microblog"
@@ -173,6 +185,10 @@ msgstr "Профиль"
 #: app/templates/base.html:29
 msgid "Logout"
 msgstr "Выход"
+
+#: app/templates/base.html:65
+msgid "Error: Could not contact server."
+msgstr "Ошибка: нет соединения с сервером."
 
 #: app/templates/index.html:3
 #, python-format
@@ -232,4 +248,3 @@ msgstr "Пописаться"
 #: app/templates/user.html:37
 msgid "Unfollow"
 msgstr "Отписаться"
-
