@@ -28,8 +28,8 @@ babel = Babel(app)
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(app.config['LAUNGUAGES'])
-    # return 'ru'
+    # return request.accept_languages.best_match(app.config['LAUNGUAGES'])
+    return 'en'
 
 if not app.debug:
     if app.config['MAIL_SERVER']:
