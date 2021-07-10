@@ -39,8 +39,6 @@ def test_follow():
     assert sara.followers.count() == 0
 
 def test_follow_posts():
-    User.query.delete()
-    db.session.commit()
     john = User(username="john", email='john@example.com')
     sara = User(username="sara", email='sara@example.com')
     mary = User(username="mary", email='mary@example.com')
