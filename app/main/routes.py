@@ -6,7 +6,7 @@ from guess_language import guess_language
 
 
 from app import db
-from app.main.forms import EditProfileForm, PostForm
+from app.main.forms import EditProfileForm, PostForm, SearchForm
 
 from app.models import User, Post
 from app.translate import translate
@@ -21,6 +21,7 @@ def before_request():
         current_user.last_seen = datetime.utcnow()
         db.session.add(current_user)
         db.session.commit()
+        g.search_form = SearchForm()
 
     g.locale = str(get_locale())
 
